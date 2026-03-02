@@ -1,0 +1,208 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Grid Container */
+/* BACKGROUND */
+body {
+    background: linear-gradient(135deg, #61cbcb, #409f26);
+    color: #fff;
+}
+
+/* MASONRY LAYOUT */
+.grid-container {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+/* GLASS CARDS */
+section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    break-inside: avoid;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.03);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .grid-container {
+        column-count: 1;
+    }
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        margin: 10px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* GRID LAYOUT */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+
+/* CARD DESIGN */
+section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* JIGSAW PLACEMENT */
+#about {
+    grid-column: span 2;
+}
+
+#academics {
+    grid-row: span 2;
+}
+
+#projects {
+    grid-column: span 2;
+}
+
+/* SKILLS */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #about,
+    #academics,
+    #projects {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+}
